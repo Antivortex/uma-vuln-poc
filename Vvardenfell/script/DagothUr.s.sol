@@ -76,7 +76,7 @@ contract DagothUr is Script {
     uint256 public constant ITERATIONS_COUNT = 10; //number of iterations to simulate, each single simulation adds 1 entry to pendingPriceRequestsIds of VotingV2.sol
 
     function run() external {
-        uint256 forkId = vm.createFork("https://mainnet.infura.io/v3/35d7e3cd5269423cbdf76c2b12262ece");
+        uint256 forkId = vm.createFork("https://mainnet.infura.io/v3/{PASTE_YOUR_INFURA_KEY}");
         vm.selectFork(forkId);
 
         address currencyAddress = 0xBD2F0Cd039E0BFcf88901C98c0bFAc5ab27566e3; //Collateral Dynamic Set Dollar ERC20 address
